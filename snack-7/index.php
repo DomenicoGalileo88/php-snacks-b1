@@ -37,7 +37,7 @@ $classe = [
 
 /* Stampare Nome, Cognome e la media dei voti di ogni alunno. */
 
-for ($i = 0; $i < count($classe); $i++) {
+/* for ($i = 0; $i < count($classe); $i++) {
     $alunno = $classe[$i];
     $sum = array_sum($alunno["voti"]);
 
@@ -45,7 +45,7 @@ for ($i = 0; $i < count($classe); $i++) {
 
     //var_dump($alunno);
     echo $alunno['name'] . ' ' . $alunno['last_name'] . ' ' . $media . '<br>';
-}
+} */
 
 ?>
 
@@ -63,12 +63,13 @@ for ($i = 0; $i < count($classe); $i++) {
     <h1>Alunni:</h1>
     <div><?php for ($i = 0; $i < count($classe); $i++) {
             $alunno = $classe[$i];
-            $sum = array_sum($alunno["voti"]);
-
-            $media = $sum / count($alunno["voti"]);
+            /* sommo tutti i voti */
+            $sum_voti = array_sum($alunno["voti"]);
+            /* faccio la media dei voti sommati */
+            $media = $sum_voti / count($alunno["voti"]);
         ?>
             <h3>
-                <?php echo $alunno['name'] . ' ' . $alunno['last_name'] . ' Media: ' . $media . '<br>'; ?>
+                <?php echo $alunno['name'] . ' ' . $alunno['last_name'] . ' Media voti: ' . $media . '<br>'; ?>
             </h3>
         <?php } 
         ?>
