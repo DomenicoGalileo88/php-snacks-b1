@@ -42,7 +42,33 @@ for ($i=0; $i < count($matchs) ; $i++) {
     $match = $matchs[$i];
     //var_dump($match);
 
-    $ris = $match['casa'] . ' - ' . $match['ospite'] . '|' . $match['punti casa'] . '-' . $match['punti ospite'];
-    var_dump($ris);
+    $ris = $match['casa'] . ' - ' . $match['ospite'] . ' | ' . $match['punti casa'] . '-' . $match['punti ospite'];
+    //var_dump($ris);
+    echo $ris;
 };
  ?>
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Snack-1</title>
+ </head>
+ <body>
+     <h1>Matchs:</h1>
+     <p>
+         <?php
+            for ($i=0; $i < count($matchs) ; $i++) { 
+                $match = $matchs[$i];
+                //var_dump($match);
+
+                $ris = $match['casa'] . ' - ' . $match['ospite'] . ' | ' . $match['punti casa'] . '-' . $match['punti ospite'] . '<br>';
+                //var_dump($ris);
+                echo $ris;
+                };
+         ?>
+     </p>
+ </body>
+ </html>
