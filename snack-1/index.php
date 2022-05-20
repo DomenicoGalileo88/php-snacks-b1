@@ -64,7 +64,7 @@ for ($i=0; $i < count($matchs) ; $i++) {
                 $match = $matchs[$i];
                 //var_dump($match);
 
-                $ris = $match['casa'] . ' - ' . $match['ospite'] . ' | ' . $match['punti casa'] . '-' . $match['punti ospite'] . '<br>';
+                $ris = '<p>' . $match['casa'] . ' - ' . $match['ospite'] . ' | ' . $match['punti casa'] . '-' . $match['punti ospite'] . '</p>';
                 //var_dump($ris);
                 echo $ris;
                 };
