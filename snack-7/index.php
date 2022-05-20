@@ -7,8 +7,8 @@ Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno 
 /* Creare un array contenente qualche alunno di un’ipotetica classe. Ogni alunno avrà Nome, Cognome e un array contenente i suoi voti scolastici. */
 $classe = [
     [
-        'name' => 'Luigi',
-        'last_name' => 'Esposito',
+        'nome' => 'Luigi',
+        'cognome' => 'Esposito',
         'voti' => [
             'matematica' => 8,
             'fisica' => 6,
@@ -17,8 +17,8 @@ $classe = [
         ],
     ],
     [
-        'name' => 'Alessia',
-        'last_name' => 'Valentino',
+        'nome' => 'Alessia',
+        'cognome' => 'Valentino',
         'voti' => [
             'matematica' => 7,
             'fisica' => 6,
@@ -27,8 +27,8 @@ $classe = [
         ],
     ],
     [
-        'name' => 'Francesca',
-        'last_name' => 'Balestra',
+        'nome' => 'Francesca',
+        'cognome' => 'Balestra',
         'voti' => [
             'matematica' => 7,
             'fisica' => 6,
@@ -37,8 +37,8 @@ $classe = [
         ],
     ],
     [
-        'name' => 'Andrea',
-        'last_name' => 'Di Matteo',
+        'nome' => 'Andrea',
+        'cognome' => 'Di Matteo',
         'voti' => [
             'matematica' => 4,
             'fisica' => 6,
@@ -47,8 +47,8 @@ $classe = [
         ],
     ],
     [
-        'name' => 'Gabriella',
-        'last_name' => 'Tizzano',
+        'nome' => 'Gabriella',
+        'cognome' => 'Tizzano',
         'voti' => [
             'matematica' => 8,
             'fisica' => 8,
@@ -89,12 +89,12 @@ $classe = [
     <div><?php for ($i = 0; $i < count($classe); $i++) {
                 $alunno = $classe[$i];
                 /* sommo tutti i voti */
-                $sum_voti = array_sum($alunno["voti"]);
+                $somma_voti = array_sum($alunno["voti"]);
                 /* faccio la media dei voti sommati */
-                $media = $sum_voti / count($alunno["voti"]);
+                $media = $somma_voti / count($alunno["voti"]);
             ?>
             <h3>
-                <?php echo $alunno['name'] . ' ' . $alunno['last_name'] . ' Media voti: ' . $media . '<br>'; ?>
+                <?php echo $alunno['nome'] . ' ' . $alunno['cognome'] . ' Media voti: ' . $media . '<br>'; ?>
             </h3>
         <?php }
         ?>
