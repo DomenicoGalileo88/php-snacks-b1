@@ -94,7 +94,7 @@ $classe = [
                 $media = $somma_voti / count($alunno["voti"]);
             ?>
             <h3>
-                <?php echo $alunno['nome'] . ' ' . $alunno['cognome'] . ' Media voti: ' . $media . '<br>'; ?>
+                <?php echo $alunno['nome'] . ' ' . $alunno['cognome'] . ' Media voti: ' . $media; ?>
             </h3>
         <?php }
         ?>
