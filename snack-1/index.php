@@ -34,5 +34,15 @@ Olimpia Milano - Cantù | 55-60
     ],
 ];
 
-var_dump($matchs);
+/* Stampiamo a schermo tutte le partite con questo schema.
+Olimpia Milano - Cantù | 55-60 */
+
+//var_dump($matchs);
+for ($i=0; $i < count($matchs) ; $i++) { 
+    $match = $matchs[$i];
+    //var_dump($match);
+
+    $ris = $match['casa'] . ' - ' . $match['ospite'] . '|' . $match['punti casa'] . '-' . $match['punti ospite'];
+    var_dump($ris);
+};
  ?>
