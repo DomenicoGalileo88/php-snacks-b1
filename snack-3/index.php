@@ -70,18 +70,18 @@ $posts = [
             //var_dump($date, $single_post);
         ?>
             <h2>
-                <?php echo $date; ?>
+                Data: <?php echo $date; ?>
             </h2>
             <?php
             foreach ($posts as $post) { ?>
                 <h3>
-                    <?php echo $post['title']; ?>
+                    Titolo: <?php echo $post['title']; ?>
                 </h3>
                 <li>
-                    <?php echo $post['author']; ?>
+                    Autore: <?php echo $post['author']; ?>
                 </li>
                 <li>
-                    <?php echo $post['text']; ?>
+                    Testo: <?php echo $post['text']; ?>
                 </li>
         <?php }
         }; ?>
